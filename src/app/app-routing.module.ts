@@ -3,12 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './UI/home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },  // Redirige la ruta vacía al componente Home
-  { path: 'home', component: HomeComponent }              // Define la ruta /home para el componente Home
+  { path: '', redirectTo: '/home', pathMatch: 'full' },  
+  { path: 'home', component: HomeComponent }              
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{useHash:true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
