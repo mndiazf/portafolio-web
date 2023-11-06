@@ -1,7 +1,6 @@
-@import "variables";
 
-html {
-    scroll-behavior: smooth;
+*, html {
+    scroll-behavior: smooth !important;
   }
   
 
@@ -14,35 +13,9 @@ font-family: 'Open Sans', sans-serif;
 
 // Estilos para el cuerpo del documento
 body {
-background-color: $color-negro;
-color: $color-blanco;
+background-color: #1f1f1f;
+color: #f5f5f5;
 
 }
 
-
-
-// Estilos para enlaces
-a {
-color: $color-morado-claro;
-text-decoration: none;
-
-&:hover {
-    color: $color-morado-medio;
-}
-}
-
-// Estilos para botones
-button {
-padding: 10px 20px;
-background-color: $color-morado-oscuro;
-border: none;
-color: $color-blanco;
-border-radius: 4px;
-cursor: pointer;
-transition: background-color 0.2s;
-
-&:hover {
-    background-color: $color-morado-medio;
-}
-}
 
