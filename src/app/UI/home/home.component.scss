@@ -1,5 +1,6 @@
 
 
+// Estrellas
 
 .shooting-stars {
     position: fixed;
@@ -78,6 +79,10 @@
       }
     }
   }
+
+
+
+  //Seccion inicio
 
 
 .hero-section {
@@ -223,13 +228,6 @@
       }
 }
 
-
-.content{
-    height: 200vh;
-}
-
-
-
 .color-gradient {
 
     background: linear-gradient(-135deg, #7a00cc, #8a00dd, #9933e6, #5577ee, #5599ff, #55bbff, #5599ff, #5577ee, #9933e6, #8a00dd, #7a00cc);    
@@ -249,8 +247,6 @@
       }
 }
 
-
-
 @keyframes animate {
     0% {
         background-position: 0%;
@@ -261,3 +257,6 @@
 
 }
 
+.content{
+  height: 200vh;
+}
