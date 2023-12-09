@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './UI/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutMeComponent } from './UI/about-me/about-me.component';
+import { ProyectsComponent } from './UI/proyects/proyects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ProyectsComponent
   ],
   imports: [
     BrowserModule,

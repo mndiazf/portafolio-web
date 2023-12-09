@@ -16,7 +16,10 @@
     <h3>Estudiante de ingenieria en informática, apasionado por el desarrollo Fullstack</h3>
     <div class="buttons-container">
       <a href="../../../assets/Currículum Vitae CV.pdf" target="_blank" class="diseño-button">Descargar CV <img src="../../../assets/descargando-archivo.png" alt=""></a>
-      <a href="mailto:mn.diaz.f@gmail.com?subject=Asunto del correo&body=Hola, te escribo para..." class="diseño-button">Contáctame 📧</a>
+      <div class="redes-container">
+        <a href="https://www.linkedin.com/in/manolo-diaz-fernandez-215567224/" target="_blank" class="icono"><img src="../../../assets/linkedin.png" alt=""></a>
+        <a href="https://github.com/mndiazf" target="_blank" class="icono icono-github"><img src="../../../assets/github.png" alt=""></a>
+      </div>
     </div>
 
     <a class="scroll-down-arrow" (click)="scrollToContent()">
@@ -27,4 +30,5 @@
 
 <div class="content" #content>
   <app-about-me></app-about-me>
+  <app-proyects></app-proyects>
 </div>
