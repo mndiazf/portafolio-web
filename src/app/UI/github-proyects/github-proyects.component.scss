@@ -1,0 +1,93 @@
+.container {
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+    margin-bottom: 40px;
+    h1 {
+        position: relative; // Establece la posición relativa para el contenedor del subrayado
+        font-size: 2em; // O el tamaño de fuente que desees
+        text-align: center; // Centra el texto del h1
+        // Añade cualquier otro estilo que necesites para el h1
+        margin-bottom: 90px;
+        margin-top: 90px;
+      
+        &:after { // Usamos el pseudo-elemento after para crear el subrayado
+          content: ''; // El contenido es vacío, pero es necesario para que se muestre el pseudo-elemento
+          position: absolute; // Posicionamiento absoluto respecto al h1
+          bottom: -10px; // Coloca el subrayado justo debajo del h1, ajusta según sea necesario
+          left: 50%; // Comienza en el centro del h1
+          transform: translateX(-50%); // Desplaza el subrayado hacia atrás en la mitad de su ancho para centrarlo
+          width: 100px; // El ancho del subrayado en relación al ancho del h1, ajusta según tu preferencia
+          height: 3px; // Altura del subrayado, puedes ajustarla a lo que prefieras
+          background-color: #584577; // Color de fondo para el subrayado, cambia según tu esquema de color
+        }
+      }
+      .tarjetas{
+        display: flex;
+        gap: 20px;
+        @media (max-width: 1200px) {
+            flex-direction:column;
+          }
+      }
+  }
+p{
+    color: #cecece;
+    margin: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+  .tarjeta-proyecto {
+    min-width: 240px; /* Ancho de la tarjeta */
+    max-width: 280px; /* Ancho de la tarjeta */
+    min-height: 250px; /* Altura de la tarjeta */
+    color: #fff; /* Color del texto */
+    transition: box-shadow 0.3s ease; /* Transición para el brillo del borde */
+    border-radius: 10px;
+    border: 5px solid #333; /* Ancho, estilo y color del borde */
+
+  }
+
+  .tarjeta-proyecto:hover {
+    box-shadow: 0 0 0 transparent, /* Borde sin brillo al hacer hover */
+                0 0 0 transparent inset, /* Borde sin brillo al hacer hover (en el caso de bordes redondeados) */
+                0 0 20px #584577; /* Brillo del borde al hacer hover */
+    border: 5px solid #1f1f1f;
+  }
+
+  .titulo {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .iconos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    img{
+        width: 40px;
+    }
+}
+
+  .tecnologias {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .tecnologia {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #333;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+

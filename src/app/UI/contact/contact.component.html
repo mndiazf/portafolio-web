@@ -1,0 +1,16 @@
+<div class="contacto-container">
+    <div class="left-section">
+      <p>¡No dudes en contactarme para cualquier consulta o proyecto!</p>
+    </div>
+    <div class="right-section">
+      <h2>Contacto</h2>
+      <label for="asunto">Asunto:</label>
+      <input type="text" id="asunto" [(ngModel)]="asunto" required>
+  
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" [(ngModel)]="mensaje" required></textarea>
+  
+      <a [href]="getMailtoLink()" class="diseño-button">Contáctame 📧</a>
+    </div>
+  </div>
+  
